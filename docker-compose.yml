@@ -1,0 +1,16 @@
+redis:
+  image: redis:latest
+
+bot:
+  build: .
+  restart: always
+  ports:
+    - "8080:8080"
+  command: --adapter slack --name "ボット"
+  links:
+    - redis
+  environment:
+    HUBOT_SLACK_TOKEN: ""
+    REDIS_URL: redis://redis:6379/shashokuru
+    AUTO_RESET_INTERVAL: 10800000
+    ONCE_CALL_COUNT: 2
