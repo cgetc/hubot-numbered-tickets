@@ -5,4 +5,4 @@ ADD . /bot
 
 WORKDIR /bot
 
-ENTRYPOINT ["bin/hubot"]
+ENTRYPOINT ["bin/hubot", "--adapter", "slack"]

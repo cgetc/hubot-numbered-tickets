@@ -6,7 +6,7 @@ bot:
   restart: always
   ports:
     - "8080:8080"
-  command: --adapter slack --name "ボット"
+  command: --name "ボット"
   links:
     - redis
   environment:
