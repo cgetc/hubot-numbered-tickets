@@ -5,7 +5,7 @@
 #   "hubot-redis-brain": "<module version>"
 #
 # Configuration:
-#   AUTO_RESET_INTERVAL - 自動的に終了する時間(秒)
+#   AUTO_RESET_INTERVAL - 自動的に終了する時間(ミリ秒)
 #   ONCE_CALL_COUNT - 一度に呼ぶ人数
 #
 # Commands:
